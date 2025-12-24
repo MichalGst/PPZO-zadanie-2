@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
 
-//Gra Wirtualne zwierzątko (Virtual Pet) – klasy [Pet, Food, Toy, Status]; karmienie, zabawa, statystyki (głód, zabawa, energia), upływ czasu.
 
 public class Pet
 {
@@ -25,25 +24,22 @@ public class Pet
 
 public class Food
 {
-    //public string Name;
+   
     public double Nutrition;
 
-    public Food(/*string name,*/ double nutrition)
+    public Food( double nutrition)
     {
-        //Name = name;
         Nutrition = nutrition;
     }
 }
 
 public class Toy
 {
-    //public string Name;
     public double Fun;
     public double EnergyDrain;
 
-    public Toy(/*string name,*/ double fun, double energy)
+    public Toy( double fun, double energy)
     {
-        //Name = name;
         Fun = fun;
         EnergyDrain = energy;
     }
